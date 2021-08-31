@@ -1,0 +1,40 @@
+footer
+    width: calc( 100% + 2rem )
+    background: black
+    display: flex
+    flex-direction: column
+    // border-top: 1px solid #020c1b
+    padding: 1rem
+    .social-icons
+        display: flex
+        width: 100%
+        align-items: center
+        justify-content: center
+        padding: 0.5rem
+        a
+            padding: 0.5rem
+            text-decoration: none
+            color: #ccd6f6
+            transition: color 0.5s ease
+            transition: color 0.5s ease, transform 0.5s ease-in-out
+            cursor: pointer
+            svg
+              fill: $whitish
+    .copyrights
+        display: flex
+        width: 100%
+        align-items: center
+        justify-content: center
+        padding: 0.5rem
+        padding-top: 0
+        font-family: 'Exo 2', sans-serif
+        letter-spacing: 1px
+
+        & > *
+            padding: 0 0.5rem
+            color: $whitish
+            transition: color 0.5s ease
+            font-size: 0.9rem
+            cursor: pointer
+            &:hover
+                color: $redish

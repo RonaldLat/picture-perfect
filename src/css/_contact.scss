@@ -1,0 +1,110 @@
+.contact{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  &>*{
+    display: flex;
+    width: 100%;
+  }
+  .contact-info{
+    gap: 1.0rem;
+    flex-direction: column;
+    .follow-us{
+      display:flex ;
+      gap: 1rem;
+      flex-direction: row;
+      svg{
+        fill: $whitish;
+        cursor: pointer;
+        transition:all 0.3s ease-in-out;
+        &:hover{
+          fill: $redish;
+        }
+      }
+    }
+    &>*{
+      display: flex;
+      text-align: left;
+      align-items: flex-start;
+      h4{
+        color: $greyish;
+        width: 12ch;
+      }
+    }
+  }
+  .contact-image{
+    width: 100%;
+    filter: grayscale(100%);
+    height: 150px;
+    object-fit: cover;
+  }
+  form{
+    flex-direction: column;
+    padding: 1.5rem 0;
+    max-width: 500px;
+    width: 100%;
+    gap: 1.0rem;
+    label{
+      display: none;
+    }
+    textarea, input{
+      background-color: lighten($blackish, 5%);
+      padding: 0.7rem 0;
+      border: none;
+      outline: none;
+      border-bottom: 1px solid $greyish;
+      height: 4ch;
+      transition: all 0.5s ease-in-out;
+      color: $greyish;
+      &:hover, &:focus{
+        color: $blackish;
+        background-color:darken($whitish, 30%) ;
+        &::placeholder{
+          color: $blackish;
+        }
+      }
+      &::placeholder{
+        color: $whitish;
+        transition: all 0.5s ease-in-out; 
+      }
+    }
+    textarea{
+      resize: none;
+      width: 100%;
+      max-width: 500px;
+      height: 60px;
+    }
+    &>*{
+      display: flex;
+      flex-direction: column;
+    }
+    .button-container{
+      display: flex;
+      width: 100%;
+      flex-direction: row;
+      align-items: center;
+      gap: 1rem;
+      button{
+        border: 2px solid $greyish;
+        background-color: $blackish;
+        outline: none;
+        width: 3rem;
+        height: 3rem;
+        transition: all 0.5s ease-in-out; 
+        border-radius: 50%;
+        display:flex ;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        svg{
+          color: $whitish;
+          transition: all 0.4s ease-in-out;
+          &:hover{
+            color: $redish;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,26 @@
+.gallery{
+  width: 100%;
+  .gallery-container{
+    width: 100%;
+    img{
+      //width: 100%;
+      //height: auto;
+    }
+  }
+}
+
+// masory library
+.carousel {
+  background: #EEE;
+}
+
+.carousel img {
+  display: block;
+  height: 200px;
+}
+
+@media screen and ( min-width: 768px ) {
+  .carousel img {
+    height: 400px;
+  }
+}

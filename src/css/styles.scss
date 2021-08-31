@@ -1,0 +1,53 @@
+$redish: #c51212;
+$redish: hsl(30,100%, 60%);
+$whitish: #ffffff;
+$greyish: #929292;
+$blackish: #171719;
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: $blackish;
+  color: $whitish;
+  width: 100%;
+  overflow-x: hidden;
+  max-width: 100%;
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  font-family: 'Exo 2', sans-serif;
+}
+main {
+  width: 100%;
+  padding: 0.5rem;
+}
+section{
+  padding: 4.5rem 0;
+}
+.section-heading {
+  color: $redish;
+  text-transform: uppercase;
+  font-size: 2rem;
+  padding: 0.5rem 0;
+}
+
+.toggle-nav{
+  transform: translateX(0) !important;
+}
+.toggle-close{
+  opacity: 1 !important;
+}
+.toggle-open{
+  opacity: 0 !important;
+}
+@import "./nav";
+@import "./home";
+@import "./contact";
+@import "./studios";
+@import "./photographers";
+@import "./gallery";
+@import "./footer.sass";
